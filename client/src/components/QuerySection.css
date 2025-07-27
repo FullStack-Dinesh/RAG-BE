@@ -1,0 +1,47 @@
+.query-section {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+textarea {
+  width: 96%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-height: 100px;
+  margin-bottom: 15px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.ask-button {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.ask-button:hover {
+  background-color: #27ae60;
+}
+
+.ask-button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.reset-button {
+  background-color: #e74c3c;
+  color: white;
+  margin-left: 5px;
+}
+
+.reset-button:hover {
+  background-color: #c0392b;
+}
