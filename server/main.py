@@ -61,7 +61,7 @@ except Exception as e:
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://fullstack-dinesh.github.io"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
