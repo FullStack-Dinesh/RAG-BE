@@ -21,7 +21,8 @@ jobs:
           python-version: '3.9'
 
       - name: Install dependencies
-        run: pip install -r rag-be/server/requirements.txt
+        working-directory: rag-be/server
+        run: pip install -r requirements.txt
         
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v4
@@ -46,3 +47,4 @@ jobs:
           app-name: 'rag-be'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_440F0790334F4F028A036C33596319CE }}
+
